@@ -24,24 +24,20 @@
       width: 100%;
       height: 100%;
     }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+          .swiper-slide {
+        font-size: 18px;
+        background: white;
+        display: block;
+      }
+      .center {
+        text-align: center;
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width:80%;
+      }
   </style>
 </head>
 <body>
@@ -49,7 +45,7 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><h1>Belmont Stakes Celebrates 150th Anniversary</h1></div>
-      <div class="swiper-slide"><img src="http://insidetailgating.com/wp-content/uploads/2016/06/belmont-1.jpg"><p>These are horses!</p></div>
+      <div class="swiper-slide"><div class="center"><img src="http://insidetailgating.com/wp-content/uploads/2016/06/belmont-1.jpg"><p>These are horses!</p></div></div>
       <div class="swiper-slide">Slide 3</div>
       <div class="swiper-slide">Slide 4</div>
       <div class="swiper-slide">Slide 5</div>
