@@ -1,0 +1,277 @@
+
+
+
+
+
+  <head>
+
+
+    <meta charset="utf-8">
+
+
+    <title>Swiper demo</title>
+
+
+    <!-- Link Swiper's CSS -->
+
+
+    <link rel="stylesheet" href="swiper.min.css">
+
+
+
+
+
+
+
+    <!-- Demo styles -->
+
+
+    <style>
+
+
+      html, body {
+
+
+        position: relative;
+
+
+        height: 100%;
+
+
+      }
+
+
+      body {
+
+
+        background: #eee;
+
+
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+
+        font-size: 12px;
+
+
+        color:#000;
+
+
+        margin: 0;
+
+
+        padding: 0;
+
+
+      }
+
+
+      .swiper-container {
+
+
+        width: 100%;
+
+
+        height: 100%;
+
+
+      }
+      img{
+        width:100%;
+      }
+
+      .swiper-slide {
+
+
+        font-size: 16px;
+
+
+        background: white;
+
+
+        display: block;
+
+
+      }
+
+
+      .center {
+
+
+        text-align: center;
+
+
+        position:relative;
+
+
+        top: 50%;
+
+
+        left: 50%;
+
+
+        transform: translate(-50%, -50%);
+
+
+        padding: 15px;
+
+
+        width:70%;
+
+
+      }
+
+
+    </style>
+
+
+  </head>
+
+
+  <body>
+
+
+    <!-- Swiper -->
+
+
+    <div class="swiper-container">
+
+
+      <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide"><div class="center"><h1>Belmont Stakes Through the First 150 Years</h1><h2>By: Ryan Connell & Michael Natale</h2><img src="https://www.belmontstakes.com/assets/uploads/Header1.jpg"></div></div>
+
+
+        <div class="swiper-slide"><div class="center"><h1>The Origins of The Belmont Stakes</h1><img src="https://www.belmontstakes.com/assets/uploads/Header1_trophy_2.jpg"><p1>The year was 1867 and a rather new sport was on the rise in North America. A true gentleman’s game, nicknamed the game of the sportsman, but known today as Horse Racing. </p1>It was a Thursday on the 19th day of June in 1867, when four breeders paid a $200 stipend to enter their horse in a mile and five furlongs race to determine the champion of the first Belmont Stakes. Ruthless, owned by Francis Morris conquered the first ever Belmont Stakes over DeCourcey, Rivoli and Monday.
+          </div></div>
+
+
+        <div class="swiper-slide"><div class="center"><h1>Jerome Park, Morris Park, and Move to Belmont Park</h1><img src="data:image/jpeg;base64,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"><p1>Not always at Belmont Park, the Belmont Stakes got its start at Jerome Park in the Fordham section of the Bronx. For the next 22 years, the land of Jerome Park was the final spot of horse racing’s Triple Crown. 1890 was a special year for racing and Morris Park. Morris Park hosted the Belmont Stakes for the first time and even hosted the Preakness Stakes. Located in Westchester County,the Belmont Stakes stayed at Morris Park until 1904, when it moved to its current home in Nassau County. As the Belmont Stakes celebrates its 150th Anniversary, Belmont Park will host the final stop in the quest for the Triple Crown.</p1>
+          </div></div>
+        
+        
+    <div class="swiper-slide"><div class="center"><h1> First Triple Crown Winner</h1> <img src="https://www.belmontstakes.com/assets/components/phpthumbof/cache/49_Sir_Barton.cec43b097b551dec531378546aa4e0f2.jpg"><p1>As Sir Barton trotted to wins at the Kentucky Derby, Preakness Stakes and Belmont Stakes, the horse had completed the sweep of major horse racing. The first ever Triple Crown winner, but accomplished the feat of the Triple Crown before it was even referred to that as such. Many horse racing enthusiasts know that Sir Barton was the first Triple Crown winner, but many don’t recall that this horse accomplished the feat, before the phrase “Triple Crown” was coined. 
+      </p1> </div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1> 1920's the Evolution of Horse Racing & Betting </h1><img src= "https://www.belmontstakes.com/uploads/historical_races/history_image_1920.jpg"><p1>Prior to the 1920’s, Social reformers were calling for racetracks to be shut down across the country, and for wide margins were successful in doing so. Once the decade flipped to the 1920’s and horse racing was fresh off the Triple Crown, the sport got some of the best news it ever heard. State governments legalized on-track betting at the racetrack, which allowed the states to make huge profits off all the people who would come out and bet on races. Gambling and horse racing is a partnership that go hand-in-hand, and it all leads back to the 1920’s and the legalization of on-track betting.</p1></div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1> Triple Crown Winners 1930-1948 </h1><img src= "https://www.belmontstakes.com/assets/components/phpthumbof/cache/48_3_Gallant_Fox_1930_Triple_Crown_Winner.cec43b097b551dec531378546aa4e0f2.jpg"><p1>From 1930-1948, there was seven Triple Crown winners, the most horse racing has ever seen over an 18 year span. In 1930, Gallant Fox claimed the Triple Crown, the second in the history of horse racing. Fast forward five years later to 1935, and Omaha took home the Triple Crown. Two years later, War Admiral claimed the Triple Crown in 1937. Moving forward to the 1940s, Whirlaway won the Triple Crown in 1941, followed by Count Fleet two years later in 1943. Then in 1946, Assault took home the Triple Crown. Two years later in 1948, Citation claimed the Triple Crown. To this day, no decade has seen more Triple Crown winners than the 1940s (4). </p1></div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1> The 1950's the Peak of Horse Racing</h1><img src= "https://www.belmontstakes.com/uploads/historical_races/history_image_1955.jpg"><p1>The decade moved into post-WWII and the 1950’s, where horse racing hit its highest point ever. Major League Baseball had lost stars Ted Williams, Joe DiMaggio, Stan Musial and more to serving in the military during WWII and the Korean War. Baseball was still a backbone in America, but was not as strong as it once was. The NFL did not exist in the 1950’s, the NHL was still only 6 teams, and the NBA was only a few years old. There was a void in the top sport in America, but the sport that continued to grow, and rise to the top, was horse racing. Horse racing became the most attended sport of the 1950’s across North America. It seemed like along with baseball, horse racing had cemented itself a place in the backbone of America, but the highest success of horse racing in the 1950’s was short lived.</p1></div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1> The Start of Change in Modern Day Racing</h1><img src="https://www.longislandpress.com/wp-content/uploads/2015/02/rsz_20150203_162604.jpg"><p1>After coming off the most successful decade in horse racing history, the 1960’s took a different direction. Gambling in America had been quartered mainly to horse racing for the better half of the 1900’s until in 1964, New Hampshire became the first state to adopt the lottery. New York followed suit in 1967 and the average horse racing fan who was there just to bet, had another medium when going about their business. The other driving force in the decline of horse racing was the suburbanization of America. Urban ethnic America in the 1940’s to the 1960’s went to the racetrack. As these groups moved out of cities, they stopped going to the track. Nobody was filling the void that they left and the number of people directly attached to horse racing started to fall.
+      </p1></div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1> Secretariat Makes History in 1973</h1><img src="https://www.belmontstakes.com/assets/components/phpthumbof/cache/50_Secretariat.cec43b097b551dec531378546aa4e0f2.jpg"><p1>1950s and 1960s never saw a Triple Crown winner. Finally, in 1973, Secretariat took home the Triple Crown in historic fashion. After winning both the Kentucky Derby and the Preakness Stakes, the conversation arose as to if Secretariat could complete the Triple Crown. And Secretariat did just that, winning the leg by 31 horse lengths. The famous call from this race was by CBS’s own Chic Anderson mid way through the race. As Anderson put it, “Secretariat is widening now! He is moving like a tremendous machine.” This ended a 25 year drought of horse racing not seeing a Triple Crown winner, and Secretariat did so as the fastest recorded time at Belmont, clocking in at two minutes and 24 seconds. </p1></div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1>Affirmed Triple Crown in 1978</h1><img src="https://www.belmontstakes.com/assets/components/phpthumbof/cache/58_Affrirmed.cec43b097b551dec531378546aa4e0f2.jpg"><p1>Seattle Slew captured the Triple Crown in 1977, but the next year, one of the best head-head rivalries of horse racing came into existence. Alydar a big, fast, thoroughbred who had all the makings of the most fit horses in entire world. Alydar was unsuccessful in capturing any of the races, because a 3-year old colt by the name of Affirmed, captured all 3 in route to the first and only back-back Triple Crown in the history of the sport. Affirmed and Alydar ran one of the best horses races ever seen at the 1978 Belmont Stakes. For over a mile they were so synchronized and in stride that they looked like the same horse. Everytime Alydar made a move, Affirmed countered and on the final stretch Affirmed outkicked Alydar to complete the sweep and capture the Triple Crown. This would be the final Triple Crown of the 20th century as the world of horse racing was on the decline for much of the 1980’s and 1990’s.</p1></div></div>
+
+
+    <div class="swiper-slide"><div class="center"><h1>Decline of Horse Racing in the 1990's and into the 2000's</h1><img src="https://www.belmontstakes.com/uploads/historical_races/history_image_1994.jpg"><p1>After an era of scandal and decline in the 1980’s, the 1990’s didn’t bring any more hope that horse racing was going to get back on track. The average daily betting at U.S. horse tracks dropped from more than $2 million in 1960 to less than $900,000 in 1990. The formation of casinos, lotteries and other forms of gambling started to divert gamblers away from just horse racing. A study by the consulting firm Christiansen-Cummings Associates Inc. showed that “betting on horses accounted for 35 percent of the American gambling pie in 1974, but dropped to only 9 percent by 1989.” Horse racing entered a stage of purgatory where an aging fanbase meets dis-interested youth, and unreliable gamblers to gather and watch a product that was not producing. The lull of the 1990’s bled over into the beginning of the 21st century, until 2002 when War Emblem started a 3-year stretch of horses winning the 1st 2 legs of the Triple Crown, but coming up short at Belmont. The interest to see the first Triple Crown since 1978 continued to mount as I’ll Have Another (2012) and California Chrome (2014) also fell one race shy of horse racing immortality. </p1></div></div>
+        
+        
+    <div class="swiper-slide"><div class="center"><h1>American Pharoah & The Resurgence of the Triple Crown</h1><img src="https://www.belmontstakes.com/assets/components/phpthumbof/cache/54_American_Pharoah16_credit_adam_mooshian.cec43b097b551dec531378546aa4e0f2.jpg"><p1>In 2014 California Chrome captured the Kentucky Derby and Preakness Stakes, but was not successful in taking the 3rd and final leg of the Triple Crown. Back on another horse the next year, jockey Victor Espinoza was determined to get to racing immortality. After staying in the 3rd place for a majority of the Kentucky Derby, Espinoza and American Pharoah propelled off the final turn to out kick Firing Line in the final furlong and capture the Derby. Two weeks later, the Preakness Stakes was wet and muddy as American Pharoah tried for the 2nd leg of the Triple Crown. Leading for the entire race, American Pharoah took the race without much competition. Fast forward three weeks and the stage was set. It had been 37-years since Affirmed had last completed the Triple Crown in 1978, was this the year that would end?  June 6th 2015, suspense was high, as the 147th running of the Belmont Stakes had a chance to become a historic landmark in quest for racing immortality. A slow start out of the gate didn’t hinder American Pharoah as the colt charged into the lead right from the start. Pressured throughout, Espinoza chose to take off as they came down the final stretch. Ahead by two lengths with an 1/8th of a mile to go, the fate was sealed as Larry Collmus of NBC Sports called it best. “At the 1/16th pole, and here it is. The 37-year wait is over. American Pharoah is finally the one, American Pharoah has won the Triple Crown.” A Triple Crown that put horse racing back in the spotlight and re-invigorated America’s fascination of the game of the sportsman.</p1></div></div>
+    
+    <div class="swiper-slide"><div class="center"><h1>The 150th Running of the Belmont Stakes</h1><img src="https://static01.nyt.com/images/2018/05/06/sports/06derby-top/merlin_137741109_ea599853-2d03-4fa8-a427-547319e8f0fe-superJumbo.jpg"><p1>As the calendar draws closer to the 150th running of the Belmont Stakes on June 9th, this year has a chance to be historic. On May 5th, the Kentucky Derby was captured by the favorite Justify, marking the 5th straight year that the favorite has won the run for the roses at Churchill Downs. Trained by American Pharoah’s trainer Bob Baffert, Justify has the makings of a Triple Crown horse. With a victory at the Derby, Justify broke a 136 year drought of a horse to win the Kentucky Derby after not racing at all as a 2-year old. A sit and kick mentality, that has the breakaway speed unmatched by any horse in the field separates the 3-year old colt from the rest. Justify is a horse who thrives on longer races, being able to hold pace and outkick any challengers, bodes well for the chance at horse racing immortality. It will all come down to the wire at Belmont Park, but regardless of the outcome, the racing world celebrates a historic landmark for one of its premier races, 150 years of the Belmont Stakes.</p1></div></div>
+    
+    <div class="swiper-slide"><div class="center"><h1> Sources</h1><p1>All photos from NYRA via https://www.belmontstakes.com/ </p1></div></div>
+
+
+      </div>
+
+
+      <!-- Add Pagination -->
+
+
+      <div class="swiper-pagination"></div>
+
+
+      <!-- Add Arrows -->
+
+
+      <div class="swiper-button-next"></div>
+
+
+      <div class="swiper-button-prev"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+
+
+    <script src="swiper.min.js"></script>
+
+
+
+
+
+
+
+    <!-- Initialize Swiper -->
+
+
+    <script>
+
+
+      var swiper = new Swiper('.swiper-container', {
+
+
+        pagination: {
+
+
+          el: '.swiper-pagination',
+
+
+          type: 'progressbar',
+
+
+        },
+
+
+        navigation: {
+
+
+          nextEl: '.swiper-button-next',
+
+
+          prevEl: '.swiper-button-prev',
+
+
+        },
+
+
+      });
+
+
+    </script>
+
+
+  </body>
+
+
+</html>
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
